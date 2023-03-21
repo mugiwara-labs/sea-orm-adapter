@@ -6,7 +6,7 @@ use sea_orm::entity::prelude::*;
 #[sea_orm(table_name = "casbin_rule")]
 pub struct Model {
     #[sea_orm(primary_key)]
-    pub id: u32,
+    pub id: i32,
     pub ptype: String,
     pub v0: String,
     pub v1: String,
